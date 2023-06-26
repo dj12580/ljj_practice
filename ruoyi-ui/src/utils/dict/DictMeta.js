@@ -8,6 +8,8 @@ import DictOptions from './DictOptions'
  * @property {String} label 标签字段
  * @property {String} value 值字段
  */
+
+
 export default class DictMeta {
   constructor(options) {
     this.type = options.type

@@ -56,6 +56,7 @@ export const constantRoutes = [
     component: () => import('@/views/error/404'),
     hidden: true
   },
+  
   {
     path: '/401',
     component: () => import('@/views/error/401'),
@@ -68,12 +69,14 @@ export const constantRoutes = [
     children: [
       {
         path: 'index',
-        component: () => import('@/views/index'),
+        component: () => import('@/views/index1'),
         name: 'Index',
         meta: { title: '首页', icon: 'dashboard', affix: true }
       }
     ]
   },
+  
+  
   {
     path: '/user',
     component: Layout,
